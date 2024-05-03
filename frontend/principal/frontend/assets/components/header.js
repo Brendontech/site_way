@@ -12,9 +12,6 @@ class Header extends HTMLElement {
         .close-menu {
           display: none;
         }
-        .menu-spacing{
-          height: 6.5rem;
-        }
         .menu{
           position: fixed;
           top: 0;
@@ -74,12 +71,12 @@ class Header extends HTMLElement {
           margin: 0 auto;
           height: 5vh;
           padding: var(--gap);
-      }
+        }
         @media (max-width: 800px) {
           .menu {
             bottom: 0;
             width:50%;
-            text-align: center;
+            text-align: center;            
           }
           .menu-content, .menu-content ul{
               padding: 0;
@@ -90,7 +87,7 @@ class Header extends HTMLElement {
             max-width: 15vh;
           }
           .menu-content{
-            height: 85%;
+            height: 100%;
             display: flex;
             justify-content: center;
           }
@@ -141,7 +138,6 @@ class Header extends HTMLElement {
                   <li><a href="servicos.html">Serviços</a></li>
                   <li><a href="#pricing">Localização</a></li>
                   <li><a href="contato.html">Contato</a></li>
-                  <li><a href="/frontend/index.html">Chat</a></li>
                 </ul>
               </nav>
           </div>
