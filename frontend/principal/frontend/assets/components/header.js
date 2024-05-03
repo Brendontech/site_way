@@ -21,7 +21,7 @@ class Header extends HTMLElement {
           left: 0;
           right: 0;
           z-index: 1;
-          width: 50%;
+          width: 100%;
           background-color: var(--color-nav);
           border-bottom:0.1rem solid var(--ligth-gray-color);
         }
@@ -30,7 +30,6 @@ class Header extends HTMLElement {
           justify-content: space-between;
           align-items: center;
           padding-top: 0;
-          height:15vh;
           padding-bottom: 0;
         }
         .menu h1{
@@ -69,20 +68,31 @@ class Header extends HTMLElement {
         }
         .image_logo {
           max-width: 28vh;
-          padding: 2.5vh;
         }
+        .main-content {
+          max-width: 120rem;
+          margin: 0 auto;
+          height: 5vh;
+          padding: var(--gap);
+      }
         @media (max-width: 800px) {
-
           .menu {
             bottom: 0;
+            width:50%;
             text-align: center;
           }
           .menu-content, .menu-content ul{
+              padding: 0;
               flex-direction: column;
               justify-content: center;
           }
+          .image_logo {
+            max-width: 15vh;
+          }
           .menu-content{
-              height:100vh;
+            height: 85%;
+            display: flex;
+            justify-content: center;
           }
           .menu{
               display: none;

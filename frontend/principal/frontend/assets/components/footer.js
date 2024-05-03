@@ -5,10 +5,15 @@ footerTemplate.innerHTML = `
         .footer-information>h1 {
         font-size: 1.8rem;
         }
+        .footer-information > p {
+            margin: 0 auto;
+            width:40vh;
+            padding: 0 10px;
+        } 
         .social-row > h1 {
             display: flex;
             justify-content: center;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
         }
         .social-row > p {
             font-size: 1.4rem;
@@ -18,13 +23,13 @@ footerTemplate.innerHTML = `
         .social-row > a{
             display: flex;
             justify-content: center;
+            font-size: 1.4rem;
         }
         .social-row > a:hover{
             color: rgb(43, 206, 22);
         }
         .footer-information {
             display: flex;
-            width: 40vh;
             font-size: 1.4rem;
             flex-direction: column;
             align-items: center;
@@ -38,20 +43,20 @@ footerTemplate.innerHTML = `
         .grid-footer {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            justify-content: space-between;
         }
         .programador {
             width: 100%;
             display: flex;
             justify-content: center;
+            align-items: center;
             font-size: 1.2rem;
+            height: 20vh;
         }
         .footer-icons {
             width: 100vh;
             display: flex;
             justify-content: space-between;
         }
-
         .sociais-footer{
             display: flex;
             justify-content: center;
@@ -60,7 +65,7 @@ footerTemplate.innerHTML = `
         .footer-content {
             max-width: 120rem;
             margin: 0 auto;
-            height: 15vh;
+            height: 24vh;
         }
         .footer-icons > img {
             width: 6vh;
@@ -95,9 +100,18 @@ footerTemplate.innerHTML = `
             width: 100%;
             background-color: #12121212;
         }
+        @media (max-width: 800px) {
+            .social-row > a {
+                font-size: 1.4rem;
+            }
+            .footer-information > p {
+                width:100%;
+            } 
+
+        }
 
     </style>
-    <footer class="main-content">
+    <footer class="footer-content">
         <div class="style-footer">
 
             <div class="sociais-footer">
@@ -116,7 +130,7 @@ footerTemplate.innerHTML = `
                     </a>
                 </div>
             </div>
-            <div class="grid-footer">
+            <div class="grid-footer main-content">
                 <div class="list-information">
                     <li class="footer-information">
                         <h1>Way ultima milha</h1>
